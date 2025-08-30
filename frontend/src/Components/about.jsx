@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
+import upvcImg from "./logo/upvc.png";   // ✅ correct relative path
+
 
 
 export default function AboutUs() {
@@ -75,26 +77,18 @@ export default function AboutUs() {
 
           </motion.div>
 
-          {/* Right Image */}
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1 }}
-            style={{ textAlign: "center" }}
-          >
-           {/* Image */}
-        <img
-          src="https://th.bing.com/th/id/OIP.di-ADwgQb8K6rAzC5B_90QHaE8?w=291&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-          alt="UPVC Windows"
-          style={{
-            maxWidth: "300px",
-            borderRadius: "20px",
-            border: "4px solid #fff", // white border
-            boxShadow: "0 10px 25px rgba(0,0,0,0.3)",
-            marginBottom: "30px",
-          }}
-        />
-          </motion.div>
+  {/* Right Image */}
+<motion.div style={{ textAlign: "center" }}>
+  <motion.img
+    src={upvcImg}
+    alt="UPVC Windows"
+    style={{ maxWidth: "500px", borderRadius: "12px" }}
+    whileHover={{ scale: 1.05, rotate: 2 }}
+    transition={{ type: "spring", stiffness: 300 }}
+  />
+</motion.div>
+
+
         </div>
 
         {/* Mission, Vision, Values Section */}
@@ -150,30 +144,6 @@ export default function AboutUs() {
             </motion.div>
           ))}
         </div>
-
-        {/* Closing Statement */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-          style={{
-            textAlign: "center",
-            marginTop: "70px",
-            fontSize: "1.5rem",
-            fontWeight: "600",
-            background: "#fff",
-            color: "black",
-            padding: "25px",
-            borderRadius: "15px",
-            maxWidth: "900px",
-            marginLeft: "auto",
-            marginRight: "auto",
-            boxShadow: "0 8px 25px rgba(0,0,0,0.25)",
-          }}
-        >
-          At Sohra UPVC Industries, we don’t just make windows and doors – we build
-          trust, safety, and comfort for every home and office.
-        </motion.p>
       </div>
       <Footer />
     </>
