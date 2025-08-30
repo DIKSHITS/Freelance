@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Components/index';
+import Index from './Components/index';   // Capitalize component name
 import Contact from './Components/Contact';
 import Productsredirect from './Components/Productsredirect';
 import AboutUs from './Components/about';
@@ -9,12 +9,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Index />} />   {/* Use <Index /> */}
         <Route path="/contact" element={<Contact />} />
-       <Route path="/productsredirect" element={<Productsredirect />} />
+        <Route path="/productsredirect" element={<Productsredirect />} />
         <Route path="/about" element={<AboutUs />} />
-        
-        {/* Add more Route components here for additional pages */}
       </Routes>
     </BrowserRouter>
   );

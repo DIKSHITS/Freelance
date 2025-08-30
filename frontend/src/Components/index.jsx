@@ -5,7 +5,7 @@ import WhyChooseSohra from "./WhyChooseSohra";
 import Products from "./Products";
 import Footer from "./Footer";
 
-function Home() {
+function index() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Navbar />
@@ -17,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default index;
