@@ -25,9 +25,9 @@ const Navbar = () => {
         {/* Centered navigation links */}
         <ul className="navbar-links navbar-links-center">
           <li onClick={() => navigate("/")} className="navbar-link">Home</li>
-          <li onClick={() => navigate("/about")} className="navbar-link">About Us</li>
+          <li onClick={() => navigate("/about")} className="navbar-link">AboutUs</li>
           <li onClick={() => navigate("/Productsredirect")} className="navbar-link">Products</li>
-          <li onClick={() => navigate("/TeamPage")} className="navbar-link">Team Members</li>
+          <li onClick={() => navigate("/TeamPage")} className="navbar-link">Team</li>
         </ul>
 
         {/* Contact Us button on the right */}
