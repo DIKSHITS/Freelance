@@ -14,10 +14,14 @@ export default function Contact() {
           <div className="contact-info">
             <h2>Get in Touch</h2>
             <p>
-              <strong>📍 Address:</strong> Sohra UPVC Industries, Shillong, Meghalaya
+               <strong>📍 Address:</strong><br />
+      Survey No. 487/2 (Near Jaggkhedi Panchayat Bhawan)<br />
+      Sanjeet Road, Village – Jaggkhedi<br />
+      District – Mandsaur, Madhya Pradesh
+
             </p>
             <p>
-              <strong>📞 Phone:</strong> +91 98765 43210
+              <strong>📞 Phone:</strong> +91 7470955631
             </p>
             <p>
               <strong>📧 Email:</strong> info@sohraupvc.com
