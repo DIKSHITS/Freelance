@@ -7,25 +7,25 @@ import Footer from "./Footer";
 // Team Members Data (Static)
 const teamMembers = [
   {
-    name: "Rahul Sharma",
-    role: "CEO & Founder",
+    name: "Satish Malviya",
+    role: "Founder",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYFmbCJ-t3z6Z7pt5F0-GBPLBvS4Y2-ccHw&s",
-    bio: "Rahul Sharma is the driving force behind our company. With over 15 years of experience in the UPVC industry, he is passionate about delivering sustainable, high-quality solutions for modern homes and businesses.",
+    bio: "Satish Malviya is the visionary behind our company. With dedication and leadership, he has laid the foundation for delivering top-quality UPVC solutions.",
   },
   {
-    name: "Anita Verma",
-    role: "Head of Design",
+    name: "Mahesh Malviya",
+    role: "Administrative Officer",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYFmbCJ-t3z6Z7pt5F0-GBPLBvS4Y2-ccHw&s",
-    bio: "Anita Verma leads the design team with creativity and precision. She specializes in modern, elegant, and functional UPVC designs for both residential and commercial spaces.",
+    bio: "Mahesh Malviya manages administrative operations efficiently, ensuring smooth workflows and organizational growth.",
   },
   {
-    name: "Arjun Singh",
-    role: "Project Manager",
+    name: "Arvind Yadav",
+    role: "Marketing Manager",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYFmbCJ-t3z6Z7pt5F0-GBPLBvS4Y2-ccHw&s",
-    bio: "Arjun Singh ensures projects run smoothly from start to finish with expertise in planning, execution, and client relations.",
+    bio: "Arvind Yadav drives our marketing strategies, building strong brand presence and connecting with customers effectively.",
   },
 ];
 

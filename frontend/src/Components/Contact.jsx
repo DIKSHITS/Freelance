@@ -31,7 +31,7 @@ export default function Contact() {
             <div className="map-container">
               <iframe
                 title="sohra-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.109!2d91.8933!3d25.5665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDM0JzAwLjAiTiA5McKwNTMnMzYuMCJF!5e0!3m2!1sen!2sin!4v1670000000000"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3641.737331603667!2d75.08762100000001!3d24.110730999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDA2JzM4LjYiTiA3NcKwMDUnMTUuNCJF!5e0!3m2!1sen!2sin!4v1757005025720!5m2!1sen!2sin"
                 width="100%"
                 height="250"
                 style={{ border: 0 }}

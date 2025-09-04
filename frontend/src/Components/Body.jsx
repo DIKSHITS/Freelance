@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Body.css";
 import UpvcImage from "./logo/upvc.png";
 import CompanyVideo from "./logo/sohra_video_2.mp4";
+import { FaWhatsapp } from "react-icons/fa"; // ✅ WhatsApp icon
 
 const Body = () => {
   const [showModal, setShowModal] = useState(false);
@@ -9,17 +10,23 @@ const Body = () => {
   // Toggle class on <body> to prevent scrolling when modal is open
   useEffect(() => {
     if (showModal) {
-      document.body.classList.add('modal-open');
+      document.body.classList.add("modal-open");
     } else {
-      document.body.classList.remove('modal-open');
+      document.body.classList.remove("modal-open");
     }
     return () => {
-      document.body.classList.remove('modal-open');
+      document.body.classList.remove("modal-open");
     };
   }, [showModal]);
 
   const openVideo = () => setShowModal(true);
   const closeVideo = () => setShowModal(false);
+
+  // ✅ Open WhatsApp chat
+  const openWhatsApp = () => {
+    const phoneNumber = "7470955631";
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
 
   return (
     <div className="body-section">
@@ -33,9 +40,7 @@ const Body = () => {
           with our energy-efficient, secure, and stylish solutions.
         </p>
         <div className="button-row">
-          <button className="learn-more-btn">
-            Explore Our Products
-          </button>
+          <button className="learn-more-btn">Explore Our Products</button>
           <button className="company-story-btn" onClick={openVideo}>
             Discover Our Story
           </button>
@@ -48,6 +53,16 @@ const Body = () => {
           className="door-window-img"
         />
       </div>
+
+      {/* ✅ Floating WhatsApp Button */}
+      <div
+        onClick={openWhatsApp}
+        className="whatsapp-btn"
+        title="Chat with us on WhatsApp"
+      >
+        <FaWhatsapp size={30} />
+      </div>
+
       {showModal && (
         <div className="video-modal" onClick={closeVideo}>
           <div className="video-modal-outer">
@@ -55,7 +70,10 @@ const Body = () => {
               <button className="close-modal-btn" onClick={closeVideo}>
                 &times;
               </button>
-              <div className="video-modal-content" onClick={e => e.stopPropagation()}>
+              <div
+                className="video-modal-content"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <video controls autoPlay>
                   <source src={CompanyVideo} type="video/mp4" />
                   Your browser does not support the video tag.
