@@ -4,7 +4,7 @@ import logo from "./logo/sohra-updated.png";
 import makeInIndia from "./logo/Make_In_India.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faFacebookF, faWhatsapp } from "@fortawesome/free-brands-svg-icons"; // ✅ Added WhatsApp
 
 const Footer = () => (
   <footer className="sohra-footer">
@@ -56,6 +56,15 @@ const Footer = () => (
             aria-label="Facebook"
           >
             <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          {/* ✅ WhatsApp link */}
+          <a
+            href="https://wa.me/7470955631"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} />
           </a>
         </div>
       </div>
